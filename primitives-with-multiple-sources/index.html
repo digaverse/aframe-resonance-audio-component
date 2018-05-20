@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Basic usage with primitives | A-Frame Resonance Audio Component</title>
+    <title>Usage with primitives using multiple sources | A-Frame Resonance Audio Component</title>
     <script src="https://cdn.jsdelivr.net/npm/aframe@0.7.1"></script>
     <script src="../aframe-resonance-audio-component.js"></script>
   </head>
@@ -14,7 +14,7 @@
       <a-resonance-audio-room
         material="wireframe:true"
         position="0 0 -5"
-        width="4"
+        width="40"
         height="4"
         depth="4"
         ambisonic-order="3"
@@ -26,7 +26,12 @@
         down="parquet-on-concrete"
         up="acoustic-ceiling-tiles">
         <a-resonance-audio-src
-          position="0 0 0"
+          position="-10 0 0"
+          src="#track"
+          loop="true"
+          autoplay="true"></a-resonance-audio-src>
+        <a-resonance-audio-src
+          position="10 0 0"
           src="#track"
           loop="true"
           autoplay="true"></a-resonance-audio-src>
