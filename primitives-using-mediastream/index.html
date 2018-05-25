@@ -27,7 +27,8 @@
         up="acoustic-ceiling-tiles">
         <a-resonance-audio-src
           position="0 0 0"
-          src=""></a-resonance-audio-src>
+          src=""
+          material="wireframe:true"></a-resonance-audio-src>
       </a-resonance-audio-room>
       <a-sky color="#6EBAA7"></a-sky>
 
@@ -51,7 +52,7 @@
       let stream = captureStream.call(srcEl)
 
       // Set resonance audio src to stream.
-      document.querySelector('a-resonance-audio-src').setAttribute('srcObject', stream)
+      document.querySelector('a-resonance-audio-src').setAttribute('resonance-audio-src', 'src', stream)
 
       // Start stream.
       srcEl.play()
