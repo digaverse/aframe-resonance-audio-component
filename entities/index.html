@@ -12,8 +12,8 @@
         <audio id="track" src="../assets/audio/track.mp3"></audio>
       </a-assets>
       <a-entity
-        material="wireframe:true"
         position="0 0 -5"
+        material="wireframe:true"
         resonance-audio-room="
           width:4;
           height:4;
@@ -27,11 +27,10 @@
           down:parquet-on-concrete;
           up:acoustic-ceiling-tiles">
         <a-entity
-          position="0 0 0"
-          geometry="primitive:sphere"
-          color="black"
-          resonance-audio-src="src:#track; loop:true; autoplay:true"></a-entity>
-      <a-entity>
+          resonance-audio-src="src:#track; loop:true; autoplay:true"
+          material="wireframe:true" geometry>
+        </a-entity>
+      </a-entity>
       <a-sky color="#6EBAA7"></a-sky>
     </a-scene>
     <!-- GitHub Corner. -->
