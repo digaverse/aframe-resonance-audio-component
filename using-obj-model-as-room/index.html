@@ -19,7 +19,8 @@
       <a-entity
         obj-model="obj: #room-obj; mtl: #room-mtl "
         position="0 1 -0.5"
-        resonance-audio-room="
+        resonance-audio-room-bb="
+          visualize:true
           left:brick-bare;
           right:transparent;
           front:transparent;
@@ -27,10 +28,9 @@
           down:parquet-on-concrete;
           up:transparent">
         <a-entity
-          visible="false"
           position="-1.5 -0.5 1.8"
           color="black"
-          resonance-audio-src="src:#track; loop:true; autoplay:true"></a-entity>
+          resonance-audio-src="src:#track; loop:true; autoplay:true; visualize:true"></a-entity>
       </a-entity>
       <a-camera position="5 0 4" rotation="0 45 0"></a-camra>
 

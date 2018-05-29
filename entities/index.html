@@ -7,30 +7,30 @@
     <script src="../aframe-resonance-audio-component.js"></script>
   </head>
   <body>
-    <a-scene>
+    <a-scene 
+      resonance-audio-room="
+        visualize:true;
+        width:4;
+        height:4;
+        depth:4;
+        ambisonicOrder:3;
+        speedOfSound:343;
+        left:brick-bare;
+        right:curtain-heavy;
+        front:plywood-panel;
+        back:glass-thin;
+        down:parquet-on-concrete;
+        up:acoustic-ceiling-tiles">
       <a-assets>
         <audio id="track" src="../assets/audio/track.mp3"></audio>
       </a-assets>
-      <a-entity
-        position="0 0 -5"
-        material="wireframe:true"
-        resonance-audio-room="
-          width:4;
-          height:4;
-          depth:4;
-          ambisonicOrder:3;
-          speedOfSound:343;
-          left:brick-bare;
-          right:curtain-heavy;
-          front:plywood-panel;
-          back:glass-thin;
-          down:parquet-on-concrete;
-          up:acoustic-ceiling-tiles">
-        <a-entity
-          resonance-audio-src="src:#track; loop:true; autoplay:true"
-          material="wireframe:true" geometry>
+        <a-entity 
+          resonance-audio-src="
+            src:#track; 
+            loop:true; 
+            autoplay:true;
+            visualize:true">
         </a-entity>
-      </a-entity>
       <a-sky color="#6EBAA7"></a-sky>
     </a-scene>
     <!-- GitHub Corner. -->
