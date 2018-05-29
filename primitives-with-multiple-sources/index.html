@@ -12,7 +12,7 @@
         <audio id="track" src="../assets/audio/track.mp3"></audio>
       </a-assets>
       <a-resonance-audio-room
-        material="wireframe:true"
+        visualize="true"
         position="0 0 -5"
         width="40"
         height="4"
@@ -26,11 +26,13 @@
         down="parquet-on-concrete"
         up="acoustic-ceiling-tiles">
         <a-resonance-audio-src
+          visualize="true"
           position="-10 0 0"
           src="#track"
           loop="true"
           autoplay="true"></a-resonance-audio-src>
         <a-resonance-audio-src
+          visualize="true"
           position="10 0 0"
           src="#track"
           loop="true"
