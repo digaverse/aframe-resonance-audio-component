@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Using obj-model as room | A-Frame Resonance Audio Component</title>
     <script src="https://cdn.jsdelivr.net/npm/aframe@0.8.2"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aframe-gradient-sky@1"></script>
     <script src="../aframe-resonance-audio-component.js"></script>
   </head>
   <body>
@@ -15,7 +14,6 @@
         <audio id="track" src="../assets/audio/track.mp3"></audio>
       </a-assets>
       <!-- ENVIRONMENT -->
-      <a-gradient-sky material="shader: gradient; topColor: 172 253 255; bottomColor: 255 198 253;"></a-gradient-sky>
       <a-entity
         obj-model="obj: #room-obj; mtl: #room-mtl "
         position="0 1 -0.5"
@@ -29,7 +27,7 @@
             visualize: false; src: #track;
             loop: true;      autoplay: true;"></a-entity>
       </a-entity>
-      <a-camera position="5 0 4" rotation="0 45 0"></a-camra>
+      <a-camera position="5 1.6 4" rotation="0 45 0"></a-camra>
 
     </a-scene>
     <!-- GitHub Corner. -->
